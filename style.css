@@ -1,0 +1,342 @@
+* {
+    margin: 0%;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: Sofia Pro Regular, Helvetica Neue, Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* HEADER */
+
+.header-container{
+    height: 100px;
+    background-color: #0025ff;
+}
+.navbar-brand img{
+    width: 60px;
+    cursor: pointer;
+    animation: expand .5s ease-in-out;
+    transition: .5s;
+}
+.nav-link,.nav-links {
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 18px;
+    word-spacing: -1px;
+    padding-right: 48px;
+}
+
+.button a{
+    border: 2px solid #fff;
+    border-radius: 24px;
+    padding: 5px 12px;
+    margin-right: 2pc;
+    text-decoration: none;
+  
+}
+.hide{
+    display: none;
+}
+    /* PEPSI HOVER */
+    .logo img:hover{
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes expand {
+        0% {
+            transform: 0;
+        }
+    
+        50% {
+            transform: scale(1.2);
+        }
+    
+        100% {
+            transform: 0;
+        }
+    }
+
+            /* MAIN */
+.container-fluid,.container{
+    --bs-gutter-x: 0;
+}
+.wild-cherry {
+    background-image: url(https://www.pepsi.com/en-us/refresh082123/images/wild-cherry/3296846-wild-cherry-2024-digital-rd-3-1920-x-1080@2x.png);
+    height: 75.333vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+    justify-content: center;
+}
+.btn{
+    background-color: #fff;
+    color: black;
+    font-weight: 800;
+    margin-bottom: 2pc;
+    font-size: xx-large;
+}
+
+        /* 2ND PHOTO */
+        .photo-container {
+            background-image: url(https://www.pepsi.com/en-us/refresh082123/images/wild-cherry/wc-tvc-bg-tablet-vert@2x.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 60vw;
+        }
+        .Card{
+            grid-template-columns: 1fr 1fr;
+        }
+        .right,.left{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .right img,.left img{
+            width: 40pc;
+        }
+   
+        .left a,.right a {
+            display: inline-block;
+            padding: 15px 2pc;
+            background-color: #fff;
+            color: black;
+            text-decoration: none;
+            font-weight: 800;
+            margin-top: 53px;
+        }
+        /* HOVER */
+        .left :hover,.right :hover
+        {
+            box-shadow: 0 0 35px #0025ff;
+            background-color: #0025ff;
+            color: #fff;
+        }       
+
+        
+        /* SOCIAL VISIBLE */
+        .social {
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .text{
+            color: #0025ff;
+            font-size: xxx-large;
+            font-weight: 900;
+            display: flex;
+            text-align: center;
+        }
+        .social{
+            align-items: center;
+            overflow: hidden;
+        }
+        .social img {    
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        /* HOVER */
+        .social img:hover {
+            transform: scale(1.2) rotate(5deg);
+        }
+        .col{
+            border: 2px solid #0025ff;
+        }
+       
+        .fa-instagram,
+        .fa-x-twitter,
+        .fa-square-facebook,
+        .fa-youtube,
+        .fa-threads,
+        .fa-tiktok {
+            font-size: 40px;
+            position: absolute;
+            color: white;
+            display: flex;
+            align-items: flex-start;
+            margin-top: 11pc;
+            opacity: 80%;
+            z-index: 1;
+            display: flex;
+        }
+
+        /* FOOTER */
+        footer{
+            height: 40vh;
+            display: flex;
+            background-color: blue;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer-container {
+            width: 90%;
+            height: 80%;
+            display: grid;
+            grid-template-columns: 1fr 3fr 2fr;
+            align-content: center;
+        }
+        .logo-2 img {
+            width: 100px;
+            animation: expand .5s ease-in-out;
+        }
+        .footer-linkest {
+            display: grid;
+            grid-template-columns: 40% 35% 35%;
+            grid-template-rows: 30px 30px 30px;
+            list-style-type: none;
+        }
+        .linkest a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 0.975rem;
+            word-spacing: -1px;
+        }
+        .socialink {
+            display: grid;
+            grid-template-columns: repeat(6, auto);
+            grid-template-rows: repeat(6, auto);
+        }
+        .footer-socialink {
+            margin-left: 100px;
+        }
+        
+        .social-2 {
+            transition: .3s;
+        }
+        .social-2 img {
+            margin-top: 20px;
+            width: 30px;
+        }
+        .social-2:nth-child(4) {
+            margin-top: 4px;
+        }
+        
+        .social-2:hover,.linkest:hover {
+            opacity: 60%;
+        }
+        .icn{
+            display: hide;
+        }
+        
+            /* PEPSI HOVER */
+        .logo-2 img:hover {
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes expand {
+            0% {
+                transform: 0;
+            }
+        
+            50% {
+                transform: scale(1.2);
+            }
+        
+            100% {
+                transform: 0;
+            }
+        }
+        
+
+
+            /* MEDIA QUERY */
+            @media (max-width: 991px) {
+                body {
+                  background-color: #0025ff;
+                }
+                .navbar-brand img{
+                    width: 50px;
+                    cursor: pointer;
+                    animation: expand .5s ease-in-out;
+                    transition: .5s;
+                    margin: 0 !important;
+                }
+                .button{
+                    display: none;
+                }
+                .navbar-brand img{
+                    margin-left: 0;
+                }
+                .nav-link{
+                    background-color: #0025ff;
+                }
+                .hide{
+                    display: block;
+                }
+                .photo-container{
+                    height: 250vw;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .Card{
+                    grid-template-columns: 1fr ;
+                }
+                .right img,.left img{
+                    width: 20pc;
+                }
+                .right-side{
+                    margin-top: 70px;
+                }
+                .text{
+                    color: #0025ff;
+                    font-size: xx-large;
+                    font-weight: 900;
+                    display: flex;
+                    text-align: center;
+                }
+                .social-visible{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    text-align: center;
+                    width: fit-content;
+                }
+                .footer-container{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    background-color: #000;
+                    width: 100%;
+                    
+                }
+                .footer-linkest{
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 24px;
+                    align-items: center;
+                    justify-content: center;
+             
+                }
+                footer{
+                   height: 60vh;
+                   background-color: #000;
+                }
+                .footer-socialink{
+                    display: flex;
+                    background-color: #0025ff;
+                    width: 100%;
+                    justify-content: space-around;
+                    margin-left: 0;
+                }
+                .btn-lg{
+                    width: 230px;
+                    height: 54px;
+                }
+              }
+    
